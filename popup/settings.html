@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="settings.css"/>
+	<script src="/static/jquery-3.2.1.min.js"></script>
+  </head>
+
+  <body>
+	<div id=mobileLoader></div>
+	<div class=logo><h1>Download Images</h1></div>
+	<div class=content>
+		<label>Sub folder in downloads</label>
+		<input id=destFolder type=text maxlength=254 style='margin-bottom:5px;'>
+		<div class='button show-downloads'>Open downloads folder</div><br>
+		<label>From which tabs</label>
+		<div class=radio-flex>
+			<div class=flex-item>
+				<input id=leftRadioTab name=grouptabs type="radio" value="left"><label class=text>Left</label><label title='Count of tabs to the left' class=text id=leftTabsCount></label>
+			</div>
+			<div class=flex-item>
+				<input id=activeRadioTab name=grouptabs type="radio" value="active"><label class=text>Active</label>
+			</div>
+			<div class=flex-item>
+				<input id=rightRadioTab name=grouptabs type="radio" value="right"><label class=text>Right</label><label title='Count of tabs to the right' class=text id=rightTabsCount></label>
+			</div>
+		</div>
+		<div class=mtop10></div>
+		<div class=spoiler-button>Additional settings</div>
+		<div class=spoiler>
+			<div class='leftright'>
+				<div>
+					<label>Min size landscape</label>
+					<input id=minSizeLandscape type=text value='' maxLength=11>
+				</div>
+				<div>
+					<label>Min size portrait</label>
+					<input id=minSizePortrait type=text value='' maxLength=11>
+				</div>
+			</div>
+			
+			<div class='leftright'>
+				<div>
+					<label>Parralel downloads</label>
+					<input id=parralelDownloads type=text value='5' maxLength=2>
+				</div>
+				<div>
+					<label>Max retries</label>
+					<input id=maxRetries type=text value='2' maxLength=2>
+				</div>
+			</div>
+			
+			<input id=onlyLargestCheck type="checkbox" checked=true><label class=text>Save only the largest image from tab</label>			
+			<div class=mtop10></div>
+			<input id=closeTabsCheck type="checkbox" checked=true><label class=text>Close tabs after download</label>
+			<div class=mtop10></div>
+			<input id=autoOpenDownloadsCheck type="checkbox" checked=false><label class=text>Auto open downloads folder</label>
+			
+		</div>	
+		<div class=mtop10></div>
+		<div id=status class=status>Loading...</div>
+		<div class='button' id='downloadButton'>download</div>
+	</div>
+   	<script src="settings.js"></script>
+
+  </body>
+
+</html>

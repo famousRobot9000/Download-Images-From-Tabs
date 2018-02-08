@@ -1,0 +1,38 @@
+{
+	"description": "Download images from tabs to the left, right or from the current tab. You can select links and open them in new tabs for download.",
+	"manifest_version": 2,
+	"name": "Download Images From Tabs",
+	"version": "1.0.1",
+	"author": "famousRobot",
+	
+	"background": {
+		"scripts": ["background.js"]
+	},
+ 
+	"permissions": [
+		"activeTab",
+		"downloads",
+		"<all_urls>",
+		"tabs",
+		"contextMenus",
+		"storage"
+	],
+	
+	"icons": {
+	  "48": "icons/download_icon48_version.png"
+    },
+	
+	"browser_action": {
+		"browser_style":false,
+		"default_icon": {
+			"48": "icons/download_icon48_version.png"
+		},
+		"theme_icons": [{
+			"light": "icons/download_icon48_version_dark.png",
+			"dark": "icons/download_icon48_version.png",
+			"size": 48
+		}]
+		
+	}
+
+}
