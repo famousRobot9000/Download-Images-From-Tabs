@@ -3,6 +3,7 @@
 This is a firefox webextension.
 
 <a href=https://addons.mozilla.org/en-US/firefox/addon/download-images-from-tabs/><img src=https://addons.cdn.mozilla.net/static/img/addons-buttons/AMO-button_1.png></a>
+
 https://addons.mozilla.org/en-US/firefox/addon/download-images-from-tabs/
 
 The main purpose of this addon is to download images from tabs more easily.
