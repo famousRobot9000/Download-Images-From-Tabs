@@ -2,6 +2,8 @@
 
 This is a firefox webextension.
 
+https://addons.mozilla.org/en-US/firefox/addon/download-images-from-tabs/
+
 The main purpose of this addon is to download images from tabs more easily.
 
 <b>Features:</b>
